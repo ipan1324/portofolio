@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<section class="projects-container">
+    <h2 class="section-title">Selected <span class="gradient-text">Works</span></h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <div class="card-img">
+                <img src="{{ url_for('static', filename='img/design (1).jpg') }}"> alt="E-learning">
+            </div>
+            <div class="card-info">
+                <h3>WEBSITE E-LEARNING TINGKAT SMP</h3>
+                <p>Website E-Learning tingkat SMP adalah website untuk belajar online bagi siswa SMP.</p>
+                <div class="tags"><span>Python</span> <span>CSS</span></div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="card-img">
+                <img src="{{ url_for('static', filename='img/Untitled design (3).jpg') }}">
+            </div>
+            <div class="card-info">
+                <h3>PERANCANGAN SISTEM INFORMASI JUAL BELI BARANG BEKAS BERBASIS WEB</h3>
+                <p>Perancangan sistem ini adalah proses membuat website jual beli barang bekas secara online.</p>
+                <div class="tags"><span>SQL</span> <span>Flask</span></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

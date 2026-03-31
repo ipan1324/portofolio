@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Me{% endblock %}
+
+{% block content %}
+<section class="contact-container">
+    <div class="contact-header">
+        <h2 class="fade-in">Get In <span class="gradient-text">Touch</span></h2>
+        <p>Ada ide project atau sekadar mau menyapa? Silakan kirim pesan!</p>
+    </div>
+
+    <div class="contact-wrapper">
+        <form action="/contact" method="POST" class="contact-form">
+            <div class="input-group">
+                <input type="text" name="name" placeholder="Nama Lengkap" required>
+            </div>
+            <div class="input-group">
+                <input type="email" name="email" placeholder="Email Anda" required>
+            </div>
+            <div class="input-group">
+                <textarea name="message" rows="5" placeholder="Pesan Anda..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+        </form>
+
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Email</h4>
+                    <p>irfan@email.com</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fab fa-github"></i>
+                <div>
+                    <h4>Github</h4>
+                    <p>github.com/irfan</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon">LinkedIn</a>
+                <a href="#" class="social-icon">Instagram</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
